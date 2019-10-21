@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> The Adventures of Huckleberry Finn by Mark Twain</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.pn">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =30;
+});
+</script>
+<figure>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Huckleberry_Finn_book.JPG/220px-Huckleberry_Finn_book.JPG" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption> The Adventures of Huckleberry Finn by Mark Twain</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>Adventures of Huckleberry Finn (or, in more recent editions, The Adventures of Huckleberry Finn) is a novel by Mark Twain, 
+first published in the United Kingdom in December 1884 and in the United States in February 1885. Commonly named among the 
+Great American Novels, the work is among the first in major American literature to be written throughout in vernacular 
+English, characterized by local color regionalism. It is told in the first person by Huckleberry "Huck" Finn, the narrator of 
+two other Twain novels (Tom Sawyer Abroad and Tom Sawyer, Detective) and a friend of Tom Sawyer. It is a direct sequel to The 
+Adventures of Tom Sawyer.</p>
+<p>
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

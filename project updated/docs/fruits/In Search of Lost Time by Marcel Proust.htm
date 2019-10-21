@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>In Search of Lost Time by Marcel Proust</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.png">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =6,500;
+});
+</script>
+<figure>
+	<img src="https://images.thestar.com/PsfSArBAHCYD2G4K3nPBSUTiQlU=/480x708/smart/filters:cb(1507073709625)/https://www.thestar.com/content/dam/thestar/entertainment/books/2013/11/07/marcel_proust_celebrated_100_years_after_in_search_of_lost_time/in_search_of_lost_time.jpg" height="200" width="300" border=2px solid black onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption> In Search of Lost Time by Marcel Proust</figcaption>
+</figure>
+<font color="brown" size="4">
+<p>In Search of Lost Time (French: À la recherche du temps perdu)—previously also translated as Remembrance of Things Past—is a novel in seven volumes, written by Marcel Proust 
+(1871–1922). It is considered to be his most prominent work, known both for its length and its theme of involuntary memory, the most famous example being the "episode of the 
+madeleine" which occurs early in the first volume. It gained fame in English in translations by C. K. Scott Moncrieff and Terence Kilmartin as Remembrance of Things Past, but the 
+title In Search of Lost Time, a literal rendering of the French, has gained usage since D. J. Enright adopted it for his revised translation published in 1992.</p>
+<p>In Search of Lost Time follows the narrator's recollections of childhood and experiences into adulthood during late 19th century to early 20th century aristocratic France, while 
+reflecting on the loss of time and lack of meaning to the world. The novel began to take shape in 1909. Proust continued to work on it until his final illness in the autumn of 1922 
+forced him to break off. Proust established the structure early on, but even after volumes were initially finished he kept adding new material and edited one volume after another for 
+publication.</p>
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>
+
+
+

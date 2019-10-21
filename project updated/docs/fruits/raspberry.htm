@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Raspberry</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="raspberry_back.jpg">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =150;
+});
+</script>
+<figure>
+	<img src="raspberry.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Raspberry</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>The raspberry is the edible fruit of a multitude of plant species in the genus Rubus of the rose family, 
+most of which are in the subgenus Idaeobatus; the name also applies to these plants themselves. 
+Raspberries are perennial with woody stems.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

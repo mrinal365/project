@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Watermelon</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="watermelon_back.jpg">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =10;
+});
+</script>
+<figure>
+	<img src="watermelon.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Watermelon</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>Citrullus lanatus is a plant species in the family Cucurbitaceae, a vine-like 
+(scrambler and trailer) flowering plant originally from Africa. It is cultivated for its fruit. 
+The subdivision of this species into two varieties, watermelons (Citrullus lanatus (Thunb.) var. lanatus) 
+and citron melons (Citrullus lanatus var. citroides (L. H. Bailey) Mansf.), originated with the erroneous 
+synonymization of Citrullus lanatus (Thunb.) Matsum. & Nakai and Citrullus vulgaris Schrad. by L.H. Bailey 
+in 1930.[2] Molecular data including sequences from the original collection of Thunberg and other relevant 
+type material, show that the sweet watermelon (Citrullus vulgaris Schrad.) and the bitter wooly melon 
+Citrullus lanatus (Thunb.) Matsum. & Nakai are not closely related to each other.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

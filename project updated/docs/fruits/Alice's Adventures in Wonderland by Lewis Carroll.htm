@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Alice's Adventures in Wonderland by Lewis Carroll</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.pn">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =70;
+});
+</script>
+<figure>
+	<img src="https://www.alephbet.com/pictures/medium/24224_1.JPG" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Alice's Adventures in Wonderland by Lewis Carroll</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland) is an 1865 novel written by English author 
+Charles Lutwidge Dodgson under the pseudonym Lewis Carroll.[1] It tells of a girl named Alice falling through a rabbit hole 
+into a fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic, giving the story lasting 
+popularity with adults as well as with children.[2] It is considered to be one of the best examples of the literary nonsense 
+genre.[2][3] Its narrative course, structure, characters, and imagery have been enormously influential[3] in both popular 
+culture and literature, especially in the fantasy genre.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

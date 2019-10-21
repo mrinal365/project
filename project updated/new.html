@@ -1,0 +1,84 @@
+<html>
+<head>
+<marquee behaviour="alternative" direction="right" color="red">
+NEW REGISTRATION
+</marquee>
+</br>
+<style>
+*{
+color:red;
+border-radius:20px;
+border-color:green;
+background-color:skyblue;
+text-align:center;
+font-size:25px;
+}
+</style>
+<script src="VALIIDATION.js"></script>
+<script src="angular min.js"></script>
+<body>
+<form name='registration'>
+<table>
+<tr>
+<td>FIRST NAME:</td>
+<td><li><input type="text" name="username" size="30" placeholder="FIRST NAME" onblur="allLetter()"/></li>
+</td>
+</tr>
+<tr>
+<td>LAST NAME:</td>
+<td><li><input type="text" name="user" placeholder="LAST NAME" size="30"onblur="allLetter()"/></li>
+</td>
+</tr>
+<tr>
+<td>D.O.B:</td>
+<td><li><input type="text" id="text" placeholder="DOB" size="30"/></td><li>
+</br>
+</tr>
+
+<tr>
+<td>COUNTRY OF RESIDENCE</td>
+<td><li><select name="country" onblur="countryselect()">
+<option value="DZ" selected>India</option>
+<option value="AL">Canada</option>
+<option value="AF">Australia</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></td></li>
+</tr>
+<tr>
+<td>E-MAIL:</td><td><li><input type="text" size="30" id="email" placeholder="E-MAIL" onblur="validmail()"/></br></li></td>
+</br>
+</tr>
+<tr>
+<td>PHONE NUMBER:</td>
+<td><li><input type="text" maxlength="10"  placeholder="PHONE NUMBER" size="30" onblur="phonenumber(this.value)"/></li></td>
+</br>
+</tr>
+<tr>
+<td>PASSWORD:</td><td><input type="PASSWORD" placeholder="PASSWORD"/></td>
+</tr>
+<tr>
+<td>CONFIRM PASSWORD:</td><td><input type="PASSWORD" placeholder="CONFIRM PASSWORD"/></TD>
+</tr>
+<tr>
+<td>
+GENDER
+</td>
+<td nowrap>
+<input type="radio" id="rdogender" name="rdogender">Male
+<input type="radio" id="rdogender" name="rdogender">Female
+<input type="radio" id="rdogender" name="rdogender">Transgender
+</td>
+</tr>
+<tr>
+<td  rowspan="6"></td>
+<td colspan="5">
+<input type="submit" value="submit">
+</td>
+</tr>
+</table>
+</script>
+
+
+</body>
+</html>

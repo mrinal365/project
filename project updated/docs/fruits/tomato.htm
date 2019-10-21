@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Tomato</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="tomato_back.jpg">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =10;
+});
+</script>
+<figure>
+	<img src="tomato.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Tomato</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>The tomato is the edible, often red, berry of the nightshade Solanum lycopersicum, 
+commonly known as a tomato plant. The species originated in western South America. 
+The Nahuatl (Aztec language) word tomatl gave rise to the Spanish word tomate, 
+from which the English word tomato derived. Its use as a cultivated food may have originated 
+with the indigenous peoples of Mexico.[2][5] The Spanish discovered the tomato from their 
+contact with the Aztec during the Spanish colonization of the Americas and brought it to Europe. 
+From there, the tomato was introduced to other parts of the European-colonized world during the 16th century.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

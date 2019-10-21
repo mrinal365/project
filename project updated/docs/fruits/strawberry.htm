@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Strawberry</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="strawberry_back.jpg">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =140;
+});
+</script>
+<figure>
+	<img src="strawberry.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Strawberry</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>The garden strawberry is a widely grown hybrid species of the genus Fragaria, 
+collectively known as the strawberries. It is cultivated worldwide for its fruit. 
+The fruit is widely appreciated for its characteristic aroma, bright red color, 
+juicy texture, and sweetness. It is consumed in large quantities, either fresh or 
+in such prepared foods as preserves, juice, pies, ice creams, milkshakes, and chocolates.
+Artificial strawberry flavorings and aromas are also widely used in many products 
+like lip gloss, candy, hand sanitizers, perfume, and many others.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

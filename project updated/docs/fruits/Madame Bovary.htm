@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Madame Bovary</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.pn">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =250;
+});
+</script>
+<figure>
+	<img src="https://www.goodbooksinthewoods.com/pictures/medium/68599.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Madame Bovary</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>Madame Bovary (full French title: Madame Bovary. Mœurs de province) is the debut novel of French writer Gustave Flaubert, published in 1856. The titular character lives beyond her means in order to escape the banalities and emptiness of provincial life.
+When the novel was first serialized in La Revue de Paris between 1 October 1856 and 15 December 1856, public prosecutors 
+attacked the novel for obscenity. The resulting trial in January 1857 made the story notorious. After Flaubert's acquittal on 
+7 February 1857, Madame Bovary became a bestseller in April 1857 when it was published in two volumes. A seminal work of 
+literary realism, the novel is now considered Flaubert's masterpiece, and one of the most influential literary works in 
+history. The British critic James Wood writes: "Flaubert established, for good or ill, what most readers think of as modern 
+realist narration, and his influence is almost too familiar to be visible.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

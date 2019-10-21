@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="../angular.min.js"></script>
+</head>
+<script>
+	var app=angular.module('x',[]);
+	app.controller('sample',function($scope){$scope.degree=['In Search of Lost Time by Marcel Proust','Don Quixote by Miguel de Cervantes','Ulysses by James Joyce','The Great Gatsby by F. Scott Fitzgerald (2)','moby dick by herman melville',
+	'Hamlet by William Shakespeare','War and Peace by Leo Tolstoy','The Odyssey by Homer','One Hundred Years of Solitude by Gabriel Garcia Marquez','CRIME AND PRIDE','Mango','CANTERVILLE GHOSt','HARRY POTTER','MADAME',
+	'THE ILLAD','ULYSESS','LOLITA'];
+	});
+</script>
+<body>
+	<div ng-app="x" ng-controller="sample">
+		<input type="text" ng-model="s"/>
+		<ul>
+			<li ng-repeat="x in degree | filter : s">{{x}}</li>
+		</ul>
+	</div>
+<a href="select_fruit.htm">Select Fruit</a>
+<b>|</b>
+<a href="category.htm">Sort by Category</a>
+</body>
+</html>

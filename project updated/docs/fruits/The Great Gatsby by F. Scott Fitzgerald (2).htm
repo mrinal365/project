@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>The Great Gatsby by F. Scott Fitzgerald</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.png">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =70;
+});
+</script>
+<figure>
+	<img src="https://images-na.ssl-images-amazon.com/images/I/81Y2m%2BfNCbL.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>The Great Gatsby by F. Scott Fitzgerald</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>
+Followed by	Tender Is the Night (1934)' 
+Francis Scott Fitzgerald - Gatsby il magnifico (Il grande Gatsby - The Great Gatsby) - I Romanzi della Palma Mondadori 1936.jpg
+The Great Gatsby is a 1925 novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional towns of West Egg and East Egg on 
+prosperous Long Island in the summer of 1922. The story primarily concerns the young and mysterious millionaire Jay Gatsby and his quixotic passion and obsession with the beautiful 
+former debutante Daisy Buchanan. Considered to be Fitzgerald's magnum opus, The Great Gatsby explores themes of decadence, idealism, resistance to change, social upheaval, and 
+excess, creating a portrait of the Roaring Twenties that has been described as a cautionary tale regarding the American Dream.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

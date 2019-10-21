@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>The Brothers Karamazov by Fyodor Dostoyevsky</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.pn">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =100;
+});
+</script>
+<figure>
+	<img src="http://www.loyalbooks.com/image/detail/Brothers-Karamazov.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>The Brothers Karamazov by Fyodor Dostoyevsky</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>The Brothers Karamazov (Russian: Бра́тья Карама́зовы, Brat'ya Karamazovy, pronounced [ˈbratʲjə kərɐˈmazəvɨ]), also 
+translated as The Karamazov Brothers, is the final novel by the Russian author Fyodor Dostoevsky. Dostoevsky spent nearly two 
+years writing The Brothers Karamazov, which was published as a serial in The Russian Messenger from January 1879 to November 
+1880. Dostoevsky died less than four months after its publication
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

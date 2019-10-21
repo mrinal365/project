@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Hamlet by William Shakespeare</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.pn">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =50;
+});
+</script>
+<figure>
+	<img src="https://images-na.ssl-images-amazon.com/images/I/51VQaOw9dKL._SX331_BO1,204,203,200_.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Hamlet by William Shakespeare</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>The Tragedy of Hamlet, Prince of Denmark, usually shortened to just Hamlet, was written by William Shakespeare sometime 
+between 1599-1602. It is arguably one of his most famous tragedies. The lines from Hamlet's monologue in act three that begin 
+"To be, or not to be..." have been studied and are widely known even amongst those that are otherwise unfamiliar with 
+Shakespeare's work. Even in Shakespeare's own lifetime, Hamlet would have been performed multiple times and considered 
+remarkably influential. Its appeal has not lessened over time. 
+
+.</p>
+<pThe play is set in Denmark and follows the prince Hamlet, who seeks revenge upon his uncle Claudius. Claudius murdered his 
+brother, Hamlet's father, in order to seize the throne and also married his wife and Hamlet's mother Gertrude. After Hamlet's 
+sentries and his friend Horatio encounter the ghost of King Hamlet, they vow to tell his son what they have witnessed.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<script src="../jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#x").hide();
+		$("#button").click(function() {
+			$("#x").toggle();
+		});
+	});
+</script>
+</head>
+<body>
+<a href="select_fruit.htm">Select BOOKS</a>
+<b>|</b>
+<a href="search.htm">Search</a>
+<button id="button">Show/Hide Gallery:</button>
+<ol id="x">
+	<li>Apple & Pear</li>
+		<ul>
+			<li>Apple</li>
+			<li>Pear</li>
+		</ul>
+	<li>Citrus</li>
+		<ul>
+			<li>Orange</li>
+			<li>Grape</li>
+			<li>Mandarin</li>
+			<li>Lime</li>
+		</ul>
+	<li>Stone fruit</li>
+		<ul>
+			<li>Nectarine</li>
+			<li>Apricot</li>
+			<li>Peach</li>
+			<li>Plum</li>
+		</ul>
+	</li>
+	<li>Tropical & Exotic</li>
+		<ul>
+			<li>Banana</li>
+			<li>Mango</li>
+		</ul>
+	</li>
+	<li>Berries</li>
+		<ul>
+			<li>Strawberry</li>
+			<li>Blueberry</li>
+			<li>Raspberry</li>
+			<li>Kiwifruit</li>
+			<li>Passionfruit</li>
+		</ul>
+	</li>
+	<li>Melons</li>
+		<ul>
+			<li>Watermelon</li>
+			<li>Rockmelon</li>
+			<li>Honeydew</li>
+			<li>Melon</li>
+		</ul>
+	</li>
+	<li>Tomatoes & Aocados</li>
+		<ul>
+			<li>Tomato</li>
+			<li>Avocado</li>
+		</ul>
+	</li>
+</ol>
+</body>
+</html>

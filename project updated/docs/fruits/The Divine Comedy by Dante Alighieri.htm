@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> The Divine Comedy by Dante Alighieri</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.pn">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =130;
+});
+</script>
+<figure>
+	<img src="https://www.sonlight.com/images/products/530-14-l.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption> The Divine Comedy by Dante Alighieri</figcaption>
+</figure>
+<font color="blue" size="4">
+<p>The Divine Comedy describes Dante's descent into Hell with Virgil as a guide; his ascent of Mount Purgatory and encounter 
+with his dead love, Beatrice; and finally, his arrival in Heaven. Examining questions of faith, desire and enlightenment, the 
+poem is a br</p>
+<p>
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

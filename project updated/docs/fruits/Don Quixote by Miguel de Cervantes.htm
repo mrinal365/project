@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Don Quixote by Miguel de Cervantes</title>
+<script src="../angular.min.js"></script>
+</head>
+<body background="https://www.beautycolorcode.com/edd2a4-2880x1800.png">
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) {
+    $scope.price =280;
+});
+</script>
+<figure>
+	<img src="https://storage.googleapis.com/assests/uploads/trial/donquijotedelamancha-767176_1383038996_1383039058.jpg" height="200" width="300" onmouseover="this.width='700';this.height='500';"
+	onmouseout="this.width='200';this.height='200';"/>
+	<figcaption>Don Quixote by Miguel de Cervantes</figcaption>
+</figure>
+<font color="brown" size="4">
+<p>Don Quixote (/ˌdɒn kiːˈhoʊtiː/; Spanish: [ˈdoŋ kiˈxote] ), fully titled The Ingenious Gentleman Don Quixote of La Mancha (Spanish: El ingenioso hidalgo don Quijote de la Mancha), 
+is a Spanish novel by Miguel de Cervantes Saavedra. It follows the adventures of Alonso Quijano, an hidalgo who reads so many chivalric novels that he decides to set out to revive 
+chivalry, under the name Don Quixote. He recruits a simple farmer, Sancho Panza, as his squire, who often employs a unique, earthly wit in dealing with Don Quixote's rhetorical 
+orations on antiquated knighthood. Don Quixote is met by the world as it is, initiating such themes as intertextuality, realism, metatheatre, and literary representation.
+</p></font>
+<div ng-app="myApp" ng-controller="costCtrl">
+<p><font color="black" size="8">Price = {{ price | currency : "Rs."}}</font></p>
+</html>

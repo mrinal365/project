@@ -1,0 +1,29 @@
+body
+{
+ background-color:lightgreen; 
+}
+
+input[type=text]
+{
+	border-color: brown;
+	border-groove: 80px;
+}
+input[type=password]
+{
+	border-color: brown;
+	border-groove: 80px;
+}
+input[type=submit]
+{
+	border-color: brown;
+	border-groove: 80px;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 10%;
+}
